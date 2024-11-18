@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
       })
       .then(response => response.json())
       .then(data => {
-        if (data.success) {
+        console.log('Respuesta del servidor:', data); // Muestra toda la respuesta
+        if (data.token) {
           console.log('Login exitoso');
           // Redirigir o hacer algo más con la respuesta
         } else {
